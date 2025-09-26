@@ -1,5 +1,7 @@
 @import "tailwindcss";
+
 @custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
     --color-primary: #647FBC;
     --color-primary-light: #91ADC8;
@@ -13,13 +15,3 @@
     --color-dark-text-muted: #94a3b8;
 }
 
-/* Habilitar dark mode */
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-  }
-}
-
-[data-theme="dark"] {
-  color-scheme: dark;
-}
