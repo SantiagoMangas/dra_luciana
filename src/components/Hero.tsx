@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
-import { Phone, ChevronDown, Heart, Award, Users, Clock, BookOpen, Globe } from 'lucide-react'
+import { ChevronDown, Heart, Award, BookOpen, Globe } from 'lucide-react'
 import { Button } from './button'
 
 export default function Hero() {

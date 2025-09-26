@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
-import { Heart, Award, BookOpen, Users, Stethoscope, GraduationCap, Star, Quote } from 'lucide-react'
+import { Heart, Award, BookOpen, Users, Stethoscope, GraduationCap, Quote } from 'lucide-react'
 
 export default function AboutSection() {
   const [isVisible, setIsVisible] = useState(false)
