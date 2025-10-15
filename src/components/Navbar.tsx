@@ -78,11 +78,13 @@ export function Navbar() {
   }, [isOpen])
 
   const navLinks = [
-    { href: '#inicio', label: 'Inicio' },
+    { href: '#hero', label: 'Inicio' },
+    { href: '#about', label: 'Sobre Mí' },
+    { href: '#trayectoria', label: 'Trayectoria' },
     { href: '#servicios', label: 'Servicios' },
-    { href: '#sobre-mi', label: 'Sobre Mí' },
-    { href: '#testimonios', label: 'Testimonios' },
-    { href: '#contacto', label: 'Contacto' }
+    { href: '#ubicacion', label: 'Ubicación' },
+    { href: '#blog', label: 'Blog' },
+    { href: '#contacto', label: 'Contacto' },
   ]
 
   return (
