@@ -33,9 +33,9 @@ export default function Hero() {
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Círculos decorativos */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-primary/10 to-secondary/10 dark:from-primary/20 dark:to-secondary/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-tl from-secondary/15 to-primary/10 dark:from-secondary/25 dark:to-primary/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-gradient-to-r from-amarilloPastel/20 to-primary/5 dark:from-amarilloPastel/30 dark:to-primary/15 rounded-full blur-2xl animate-pulse" style={{animationDelay: '4s'}}></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-br from-primary to-secondary dark:from-primary/20 dark:to-secondary/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-tl from-secondary to-primary dark:from-secondary/25 dark:to-primary/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-1/2 left-1/3 w-48 h-48 bg-gradient-to-r from-amarilloPastel to-primary dark:from-amarilloPastel/30 dark:to-primary/15 rounded-full blur-2xl animate-pulse" style={{animationDelay: '4s'}}></div>
         
         {/* Patrón de puntos */}
         <div className="absolute inset-0 opacity-30 dark:opacity-20">

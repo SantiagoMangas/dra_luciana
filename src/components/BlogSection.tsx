@@ -85,7 +85,6 @@ export default function BlogSection() {
     <section id="blog" className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-slate-800 dark:to-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 dark:bg-primary/20 rounded-full mb-6">
             <BookOpen className="w-4 h-4 text-primary dark:text-primary-light" />
@@ -101,7 +100,6 @@ export default function BlogSection() {
           </p>
         </div>
 
-        {/* Grid de posts */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.map((post) => {
             const imageUrl = urlForImage(post.mainImage)
@@ -118,7 +116,6 @@ export default function BlogSection() {
                 key={post._id}
                 className="group bg-white dark:bg-slate-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-2"
               >
-                {/* Imagen */}
                 <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-200 to-gray-300 dark:from-slate-700 dark:to-slate-600">
                   {imageUrl ? (
                     <img 
@@ -142,7 +139,6 @@ export default function BlogSection() {
                   )}
                 </div>
 
-                {/* Contenido */}
                 <div className="p-6">
                   <div className="flex items-center gap-3 mb-3 text-sm text-gray-500 dark:text-gray-400">
                     <span className="flex items-center gap-1">

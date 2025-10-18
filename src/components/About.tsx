@@ -31,8 +31,8 @@ export default function About() {
     >
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 right-10 w-64 h-64 bg-gradient-to-br from-secondary/10 to-primary/5 dark:from-secondary/20 dark:to-primary/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-10 w-80 h-80 bg-gradient-to-tl from-amarilloPastel/15 to-secondary/10 dark:from-amarilloPastel/25 dark:to-secondary/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 right-10 w-64 h-64 bg-gradient-to-br from-secondary to-primary dark:from-secondary/20 dark:to-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-10 w-80 h-80 bg-gradient-to-tl from-amarilloPastel to-secondary dark:from-amarilloPastel/25 dark:to-secondary/20 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
