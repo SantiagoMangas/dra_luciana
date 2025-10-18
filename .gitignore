@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# .gitignore
+
+# Environment variables
+.env.local
+.env*.local
+
+# Sanity
+.sanity
+dist
