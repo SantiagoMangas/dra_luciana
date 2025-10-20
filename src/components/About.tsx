@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
-import { Stethoscope, Quote } from 'lucide-react'
+import { Stethoscope, Quote, MapPin, GraduationCap, Briefcase } from 'lucide-react'
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false)
@@ -49,12 +49,12 @@ export default function About() {
           </h2>
           
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Una pasión por la endocrinología que nació en la facultad y se transformó en una misión de vida
+            De Puan a Buenos Aires: un viaje de aprendizaje continuo en endocrinología
           </p>
         </div>
-
+        
         {/* Historia personal */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
           
           {/* Texto principal */}
           <div className={`space-y-6 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
@@ -63,31 +63,27 @@ export default function About() {
             <div className="relative">
               <Quote className="absolute -top-4 -left-4 w-8 h-8 text-primary/30 dark:text-primary-light/30" />
               <blockquote className="text-2xl md:text-3xl font-light text-gray-700 dark:text-gray-300 italic pl-8">
-                La endocrinología me enseñó que los pequeños cambios pueden generar grandes transformaciones
+                La comunicación efectiva y la empatía clínica son la base de una medicina humanizada
               </blockquote>
             </div>
 
             <div className="space-y-4 text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
               <p>
-                Mi camino en la medicina comenzó con una profunda curiosidad por entender cómo nuestro cuerpo 
-                se comunica consigo mismo. Las hormonas, esos mensajeros silenciosos, me fascinaron desde el 
-                primer día de clase.
+                Nacida en San Luis, mi camino en la medicina comenzó en 2010 en la <span className="text-primary dark:text-primary-light font-medium">Facultad de Ciencias Biomédicas del Hospital Universitario Austral</span>. Desde el primer día, las hormonas y su fascinante rol como mensajeros del cuerpo me cautivaron.
               </p>
               
               <p>
-                A lo largo de estos años, he tenido el privilegio de acompañar a cientos de pacientes en sus 
-                tratamientos, de publicar investigaciones que contribuyen al conocimiento médico, y de formar 
-                a las nuevas generaciones de médicos.
+                Tras graduarme en 2015, realicé mi residencia en el <span className="text-primary dark:text-primary-light font-medium">Hospital de Agudos José María Ramos Mejía</span> (2016-2021), donde tuve el honor de desempeñarme como Jefa de Residentes durante mi último año. Esta experiencia me enseñó no solo medicina, sino también liderazgo y trabajo en equipo.
               </p>
               
               <p>
-                Este espacio personal nace de la necesidad de <span className="text-primary dark:text-primary-light font-medium">
-                compartir experiencias, reflexiones y conocimientos</span> que van más allá del consultorio. 
-                Aquí encontrarás casos clínicos, novedades en endocrinología, y mi perspectiva personal sobre 
-                nuestra hermosa profesión.
+                Hoy, desde Buenos Aires, combino mi práctica clínica en múltiples consultorios con la <span className="text-primary dark:text-primary-light font-medium">investigación científica y la docencia</span>. Me especializo en osteología, diabetes, y nutrición, siempre con un enfoque integral y humanizado.
+              </p>
+
+              <p>
+                Este espacio nace de mi pasión por compartir conocimiento con colegas y pacientes, difundiendo las últimas novedades en endocrinología y reflexionando sobre nuestra hermosa profesión.
               </p>
             </div>
-
             {/* Call to action sutil */}
             <div className="flex items-center gap-4 pt-4">
               <div className="flex -space-x-2">
@@ -107,11 +103,19 @@ export default function About() {
               <div className="aspect-[3/4] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-slate-800 dark:to-slate-700 rounded-2xl shadow-xl relative overflow-hidden">
                 <img 
                   src="/perfil.jpg" 
-                  alt="Dra. Luciana Mangas en su consulta"
+                  alt="Dra. Luciana Mangas - Especialista en Endocrinología"
                   className="w-full h-full object-cover"
                 />
                 
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-transparent to-transparent"></div>
+              </div>
+
+              {/* Badge con ubicación */}
+              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm px-6 py-3 rounded-full shadow-xl border border-primary/20">
+                <div className="flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-primary dark:text-primary-light" />
+                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">Buenos Aires, Argentina</span>
+                </div>
               </div>
             </div>
           </div>

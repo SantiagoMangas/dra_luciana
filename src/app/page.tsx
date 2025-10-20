@@ -1,6 +1,6 @@
 import Hero from '../components/Hero';
 import About from '../components/About'
-import Trayectoria from '../components/Trayectoria'
+import TrajectoriaPreview from '../components/TrayectoriaPreview'
 import Valores from '../components/ServicesSection'
 import BlogSection from '../components/BlogSection'
 import ContactSecion from '../components/ContactSection';
@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Hero />
       <About />
-      <Trayectoria />
+      <TrajectoriaPreview />
       <Valores />
       <BlogSection />
       <ContactSecion />
