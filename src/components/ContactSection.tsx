@@ -56,12 +56,7 @@ export default function ContactSection() {
           <Phone className="text-green-500" />
           <span>{current.phone}</span>
         </div>
-
-        <div className="flex items-center space-x-2">
-          <Clock className="text-green-500" />
-          <span>{current.schedule}</span>
-        </div>
-
+        
         <div className="flex items-center space-x-2">
           <MapPin className="text-green-500" />
           <a

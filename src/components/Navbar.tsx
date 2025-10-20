@@ -82,7 +82,6 @@ export function Navbar() {
     { href: '#about', label: 'Sobre Mí' },
     { href: '#trayectoria', label: 'Trayectoria' },
     { href: '#servicios', label: 'Servicios' },
-    { href: '#ubicacion', label: 'Ubicación' },
     { href: '#blog', label: 'Blog' },
     { href: '#contacto', label: 'Contacto' },
   ]

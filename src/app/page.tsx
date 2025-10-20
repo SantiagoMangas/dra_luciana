@@ -13,6 +13,7 @@ export default function Home() {
       <Trayectoria />
       <Valores />
       <BlogSection />
+      <ContactSecion />
     </>
   )
 }

@@ -2,7 +2,7 @@ import { Heart, Mail, Phone, MapPin, Clock, Shield, Calendar } from "lucide-reac
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary dark:bg-slate-900 py-12 px-4 transition-colors duration-300">
+    <footer className="bg-secondary dark:bg-slate-800 py-12 px-4 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
           {/* Columna 1 - Información Principal */}

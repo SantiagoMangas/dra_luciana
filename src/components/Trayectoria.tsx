@@ -114,26 +114,6 @@ export default function TrajectorySection() {
             ))}
           </div>
         </div>
-
-        {/* Estadísticas o timeline opcional */}
-        <div className={`mt-16 transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-xl border border-gray-200/50 dark:border-slate-700/50">
-            <div className="grid md:grid-cols-3 gap-8 text-center">
-              <div>
-                <div className="text-4xl md:text-5xl font-bold text-primary dark:text-primary-light mb-2">10+</div>
-                <div className="text-gray-600 dark:text-gray-300">Años de experiencia</div>
-              </div>
-              <div>
-                <div className="text-4xl md:text-5xl font-bold text-secondary dark:text-primary-light mb-2">50+</div>
-                <div className="text-gray-600 dark:text-gray-300">Publicaciones científicas</div>
-              </div>
-              <div>
-                <div className="text-4xl md:text-5xl font-bold text-primary dark:text-primary-light mb-2">500+</div>
-                <div className="text-gray-600 dark:text-gray-300">Pacientes atendidos</div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )
