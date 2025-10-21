@@ -69,7 +69,7 @@ export default function ServicesSection() {
     <section 
       ref={sectionRef}
       id="servicios" 
-      className="py-20 bg-gradient-to-t via-amarilloPastel/30 to-secondary/60 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 transition-colors duration-300 relative overflow-hidden"
+      className="py-20 bg-gradient-to-t via-amarilloPastel/30 to-secondary/60 dark:from-slate-900 dark:via-slate-800 dark:to-slate-700 transition-colors duration-300 relative overflow-hidden"
     >
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0">
@@ -134,13 +134,6 @@ export default function ServicesSection() {
             </div>
           ))}
         </div>
-           <div className="flex justify-center">
-              <button className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 dark:bg-primary-light dark:hover:bg-primary-light/90 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <Calendar className="w-5 h-5" />
-                Contactar
-                <ArrowRight className="w-5 h-5" />
-              </button>
-            </div>
       </div>
     </section>
   )

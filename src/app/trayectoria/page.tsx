@@ -23,7 +23,6 @@ export default function TrayectoriaPage() {
         </div>
       </div>
 
-      {/* Componente con todo el contenido */}
       <TrajectoryFull />
     </main>
   )

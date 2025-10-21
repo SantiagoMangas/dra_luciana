@@ -27,7 +27,7 @@ export default function About() {
     <section 
       ref={sectionRef}
       id="about" 
-      className="py-20 bg-white dark:bg-slate-900 transition-colors duration-300 relative overflow-hidden"
+      className="py-16 md:py-20 bg-gradient-to-t from-white via-amarilloPastel/30 to-secondary/60 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 transition-colors duration-300 relative overflow-hidden"
     >
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0">

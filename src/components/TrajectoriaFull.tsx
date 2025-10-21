@@ -469,7 +469,6 @@ export default function TrajectorySection() {
                 )}
               </div>
 
-              {/* Cursos y Congresos asistidos */}
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6 md:mb-8 text-center">
                   Cursos y <span className="text-secondary dark:text-primary-light">Congresos Asistidos</span>
@@ -529,7 +528,6 @@ export default function TrajectorySection() {
             </div>
           )}
 
-          {/* TAB: EXPERIENCIA */}
           {activeTab === 'experiencia' && (
             <div className="max-w-4xl mx-auto">
               <div className="space-y-4 md:space-y-6">
@@ -576,7 +574,6 @@ export default function TrajectorySection() {
             </div>
           )}
 
-          {/* TAB: CONGRESOS */}
           {activeTab === 'congresos' && (
             <div className="max-w-5xl mx-auto">
               <div className="grid sm:grid-cols-2 gap-4 md:gap-6 mb-6">

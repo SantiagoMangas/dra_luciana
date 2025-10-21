@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Award, GraduationCap, Sparkles, Trophy, ArrowRight, Briefcase, Globe, BookOpen } from 'lucide-react'
 import Link from 'next/link'
 
-export default function TrajectoryPreview() {
+export default function TrajectoriaPreview() {
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef(null)
 
@@ -28,12 +28,12 @@ export default function TrajectoryPreview() {
     <section 
       ref={sectionRef}
       id="trayectoria" 
-      className="py-16 md:py-20 bg-white dark:bg-slate-900 transition-colors duration-300 relative overflow-hidden"
+      className="py-16 md:py-20 bg-gradient-to-b from-white via-amarilloPastel/30 to-secondary/60 dark:from-slate-900 dark:via-slate-800 dark:to-slate-700 transition-colors duration-300 relative overflow-hidden"
     >
       {/* Elementos decorativos de fondo */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-primary/10 to-secondary/5 dark:from-primary/20 dark:to-secondary/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-tl from-amarilloPastel/15 to-secondary/10 dark:from-amarilloPastel/25 dark:to-secondary/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-primary to-secondary dark:from-primary/20 dark:to-secondary/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-tl from-amarilloPastel to-secondary dark:from-amarilloPastel/25 dark:to-secondary/20 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -62,7 +62,6 @@ export default function TrajectoryPreview() {
             <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-amarilloPastel transform -translate-x-1/2"></div>
             
             <div className="space-y-12">
-              {/* 2015 - Medicina */}
               <div className="relative flex items-center">
                 <div className="w-1/2 pr-12 text-right">
                   <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Medicina</h4>
@@ -79,24 +78,22 @@ export default function TrajectoryPreview() {
                 </div>
               </div>
 
-              {/* 2020 - Residencia */}
               <div className="relative flex items-center">
                 <div className="w-1/2 pr-12 text-right">
-                  <span className="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary dark:text-primary-light px-4 py-2 rounded-full font-bold">
+                  <span className="inline-block bg-secondary/40 dark:bg-secondary/20 text-primary dark:text-primary-light px-4 py-2 rounded-full font-bold">
                     2016 - 2020
                   </span>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gradient-to-br from-secondary to-amarilloPastel rounded-full flex items-center justify-center shadow-lg z-10">
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-gradient-to-br from-primary/90 to-amarilloPastel rounded-full flex items-center justify-center shadow-lg z-10">
                   <Award className="w-6 h-6 text-white" />
                 </div>
                 <div className="w-1/2 pl-12">
                   <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Residencia en Endocrinología</h4>
-                  <p className="text-secondary dark:text-primary-light font-medium mb-1">Hospital Ramos Mejía</p>
+                  <p className="text-primary dark:text-primary-light font-medium mb-1">Hospital Ramos Mejía</p>
                   <p className="text-sm text-gray-600 dark:text-gray-400">Formación especializada completa</p>
                 </div>
               </div>
 
-              {/* 2021 - Jefa */}
               <div className="relative flex items-center">
                 <div className="w-1/2 pr-12 text-right">
                   <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Jefa de Residentes</h4>
@@ -107,7 +104,7 @@ export default function TrajectoryPreview() {
                   <Trophy className="w-6 h-6 text-white" />
                 </div>
                 <div className="w-1/2 pl-12">
-                  <span className="inline-block bg-amarilloPastel/20 dark:bg-amarilloPastel/30 text-primary dark:text-primary-light px-4 py-2 rounded-full font-bold">
+                  <span className="inline-block bg-primary/20 dark:bg-amarilloPastel/30 text-primary dark:text-primary-light px-4 py-2 rounded-full font-bold">
                     2020 - 2021
                   </span>
                 </div>
@@ -133,14 +130,14 @@ export default function TrajectoryPreview() {
               </div>
 
               <div className="relative">
-                <div className="absolute -left-8 w-8 h-8 bg-gradient-to-br from-secondary to-amarilloPastel rounded-full flex items-center justify-center">
+                <div className="absolute -left-8 w-8 h-8 bg-gradient-to-br from-secondary to-primary rounded-full flex items-center justify-center">
                   <Award className="w-4 h-4 text-white" />
                 </div>
                 <span className="inline-block bg-secondary/10 dark:bg-secondary/20 text-secondary dark:text-primary-light px-3 py-1 rounded-full text-xs font-bold mb-2">
                   2016 - 2020
                 </span>
                 <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-1">Residencia en Endocrinología</h4>
-                <p className="text-sm text-secondary dark:text-primary-light font-medium mb-1">Hospital Ramos Mejía</p>
+                <p className="text-sm text-primary dark:text-primary-light font-medium mb-1">Hospital Ramos Mejía</p>
                 <p className="text-xs text-gray-600 dark:text-gray-400">Formación especializada completa</p>
               </div>
 
@@ -161,23 +158,23 @@ export default function TrajectoryPreview() {
 
         {/* Estadísticas en cards más visuales */}
         <div className={`grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-16 transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="bg-gradient-to-br from-primary/10 to-secondary/10 dark:from-primary/20 dark:to-secondary/20 rounded-2xl p-6 text-center border border-primary/20 dark:border-primary/30">
-            <div className="text-3xl md:text-4xl font-bold text-primary dark:text-primary-light mb-2">10+</div>
+          <div className="bg-gradient-to-br from-primary/20 to-secondary/40 dark:from-primary/20 dark:to-secondary/20 rounded-2xl p-6 text-center border border-primary/20 dark:border-primary/30">
+            <div className="text-3xl md:text-4xl font-bold text-primary-light dark:text-primary-light mb-2">10+</div>
             <div className="text-xs md:text-sm text-gray-700 dark:text-gray-300 font-medium">Diplomaturas</div>
           </div>
 
-          <div className="bg-gradient-to-br from-secondary/10 to-amarilloPastel/15 dark:from-secondary/20 dark:to-amarilloPastel/25 rounded-2xl p-6 text-center border border-secondary/20 dark:border-secondary/30">
-            <div className="text-3xl md:text-4xl font-bold text-secondary dark:text-primary-light mb-2">75+</div>
+          <div className="bg-gradient-to-br from-secondary/40 to-amarilloPastel/15 dark:from-secondary/20 dark:to-amarilloPastel/25 rounded-2xl p-6 text-center border border-secondary/20 dark:border-secondary/30">
+            <div className="text-3xl md:text-4xl font-bold text-primary-light dark:text-primary-light mb-2">75+</div>
             <div className="text-xs md:text-sm text-gray-700 dark:text-gray-300 font-medium">Cursos y Congresos</div>
           </div>
 
-          <div className="bg-gradient-to-br from-amarilloPastel/15 to-primary/10 dark:from-amarilloPastel/25 dark:to-primary/20 rounded-2xl p-6 text-center border border-amarilloPastel/30 dark:border-amarilloPastel/40">
-            <div className="text-3xl md:text-4xl font-bold text-primary dark:text-primary-light mb-2">14+</div>
+          <div className="bg-gradient-to-br from-amarilloPastel/30 to-primary/40 dark:from-amarilloPastel/25 dark:to-primary/20 rounded-2xl p-6 text-center border border-amarilloPastel/30 dark:border-amarilloPastel/40">
+            <div className="text-3xl md:text-4xl font-bold text-primary-light dark:text-primary-light mb-2">14+</div>
             <div className="text-xs md:text-sm text-gray-700 dark:text-gray-300 font-medium">Presentaciones</div>
           </div>
 
-          <div className="bg-gradient-to-br from-primary/10 to-amarilloPastel/15 dark:from-primary/20 dark:to-amarilloPastel/25 rounded-2xl p-6 text-center border border-primary/20 dark:border-primary/30">
-            <div className="text-3xl md:text-4xl font-bold text-secondary dark:text-primary-light mb-2">14</div>
+          <div className="bg-gradient-to-br from-secondary/70 to-amarilloPastel/15 dark:from-primary/20 dark:to-amarilloPastel/25 rounded-2xl p-6 text-center border border-primary/40 dark:border-primary/30">
+            <div className="text-3xl md:text-4xl font-bold text-primary-light dark:text-primary-light mb-2">14</div>
             <div className="text-xs md:text-sm text-gray-700 dark:text-gray-300 font-medium">Investigaciones</div>
           </div>
         </div>
@@ -221,27 +218,13 @@ export default function TrajectoryPreview() {
           </div>
         </div>
 
-        {/* CTA mejorado */}
         <div className={`text-center transition-all duration-1000 delay-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="bg-gradient-to-br from-primary/5 via-secondary/5 to-amarilloPastel/5 dark:from-primary/10 dark:via-secondary/10 dark:to-amarilloPastel/10 rounded-2xl md:rounded-3xl p-8 md:p-12 border border-primary/20 dark:border-primary/30 max-w-3xl mx-auto">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl mb-6 shadow-lg">
-              <Sparkles className="w-8 h-8 text-white" />
-            </div>
-            
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              Explorá mi trayectoria completa
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-8 text-lg">
-              Descubrí en detalle toda mi formación, experiencia laboral, cursos y protocolos de investigación
-            </p>
-            
             <Link href="/trayectoria">
-              <button className="inline-flex items-center gap-3 bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
-                Ver Todo
+              <button className="inline-flex items-center gap-3 bg-gradient-to-r from-primary to-primary-light text-white px-8 py-4 font-bold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                Explorá mi trayectoria completa
                 <ArrowRight className="w-6 h-6" />
               </button>
             </Link>
-          </div>
         </div>
       </div>
     </section>
