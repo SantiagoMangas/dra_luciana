@@ -114,7 +114,7 @@ export default function TrajectoriaPreview() {
 
           {/* Timeline móvil - Vertical */}
           <div className="md:hidden relative pl-8">
-            <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-amarilloPastel"></div>
+            <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-amarilloPastel"></div>
             
             <div className="space-y-8">
               <div className="relative">

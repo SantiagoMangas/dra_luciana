@@ -99,7 +99,7 @@ export default function Hero() {
 
             {/* Botones */}
             <div className="flex flex-col gap-3 w-full max-w-xs mx-auto">
-              <Link href="#publicaciones" className="w-full">
+              <Link href="#blog" className="w-full">
                 <Button
                   variant="default"
                   size="lg"
@@ -110,7 +110,7 @@ export default function Hero() {
                 </Button>
               </Link>
 
-              <Link href="#sobre-mi" className="w-full">
+              <Link href="#trayectoria" className="w-full">
                 <Button
                   variant="outline"
                   size="lg"
@@ -179,7 +179,7 @@ export default function Hero() {
 
             {/* Botones desktop */}
             <div className="flex gap-4">
-              <Link href="#publicaciones">
+              <Link href="#blog">
                 <Button
                   variant="default"
                   size="lg"
@@ -190,7 +190,7 @@ export default function Hero() {
                 </Button>
               </Link>
 
-              <Link href="#sobre-mi">
+              <Link href="#trayectoria">
                 <Button
                   variant="outline"
                   size="lg"

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { Menu, X, Sun, Moon } from 'lucide-react'
 import { Button } from './button'
 
@@ -9,6 +10,9 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [isDark, setIsDark] = useState(false)
+  const pathname = usePathname()
+  
+  const isTrayectoriaRoute = pathname === '/trayectoria'
 
   // Efecto para manejar el scroll
   useEffect(() => {
@@ -78,12 +82,36 @@ export function Navbar() {
   }, [isOpen])
 
   const navLinks = [
-    { href: '#hero', label: 'Inicio' },
-    { href: '#about', label: 'Sobre Mí' },
-    { href: '#trayectoria', label: 'Trayectoria' },
-    { href: '#servicios', label: 'Servicios' },
-    { href: '#blog', label: 'Blog' },
-    { href: '#contacto', label: 'Contacto' },
+    { 
+      href: isTrayectoriaRoute ? '/#hero' : '#hero', 
+      label: 'Inicio',
+      onClick: closeMenu
+    },
+    { 
+      href: isTrayectoriaRoute ? '/#about' : '#about', 
+      label: 'Sobre Mí',
+      onClick: closeMenu
+    },
+    { 
+      href: isTrayectoriaRoute ? '/#trayectoria' : '#trayectoria', 
+      label: 'Trayectoria',
+      onClick: closeMenu
+    },
+    { 
+      href: isTrayectoriaRoute ? '/#servicios' : '#servicios', 
+      label: 'Servicios',
+      onClick: closeMenu
+    },
+    { 
+      href: isTrayectoriaRoute ? '/#blog' : '#blog', 
+      label: 'Blog',
+      onClick: closeMenu
+    },
+    { 
+      href: isTrayectoriaRoute ? '/#contacto' : '#contacto', 
+      label: 'Contacto',
+      onClick: closeMenu
+    },
   ]
 
   return (

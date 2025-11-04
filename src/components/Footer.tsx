@@ -24,15 +24,6 @@ export default function Footer() {
               <div className="w-8 h-px bg-gradient-to-l from-primary to-transparent"></div>
             </h4>
             <div className="space-y-4">
-              <div className="flex items-start justify-center md:justify-start gap-3 text-slate-600 dark:text-gray-300 group hover:text-primary dark:hover:text-primary-light transition-colors duration-200">
-                <div className="p-2 rounded-lg bg-primary/10 dark:bg-primary/20 group-hover:bg-primary/20 dark:group-hover:bg-primary/30 transition-colors duration-200">
-                  <Phone className="w-4 h-4 text-primary dark:text-primary-light flex-shrink-0" />
-                </div>
-                <div>
-                  <div className="font-medium text-sm">+54 11 3770-9044</div>
-                  <div className="text-xs text-slate-500 dark:text-gray-400">Consultorio</div>
-                </div>
-              </div>
 
               <div className="flex items-start justify-center md:justify-start gap-3 text-slate-600 dark:text-gray-300 group hover:text-primary dark:hover:text-primary-light transition-colors duration-200">
                 <div className="p-2 rounded-lg bg-primary/10 dark:bg-primary/20 group-hover:bg-primary/20 dark:group-hover:bg-primary/30 transition-colors duration-200">
@@ -73,17 +64,6 @@ export default function Footer() {
                   <div className="text-xs text-slate-500 dark:text-gray-400">9:00 - 18:00 hs</div>
                 </div>
               </div>
-
-              <div className="flex items-start justify-center md:justify-start gap-3 text-slate-600 dark:text-gray-300 group hover:text-primary dark:hover:text-primary-light transition-colors duration-200">
-                <div className="p-2 rounded-lg bg-primary/10 dark:bg-primary/20 group-hover:bg-primary/20 dark:group-hover:bg-primary/30 transition-colors duration-200">
-                  <Calendar className="w-4 h-4 text-primary dark:text-primary-light flex-shrink-0" />
-                </div>
-                <div>
-                  <div className="font-medium text-sm">Sábados</div>
-                  <div className="text-xs text-slate-500 dark:text-gray-400">9:00 - 13:00 hs</div>
-                </div>
-              </div>
-
               <div className="flex items-start justify-center md:justify-start gap-3 text-slate-600 dark:text-gray-300 group hover:text-primary dark:hover:text-primary-light transition-colors duration-200">
                 <div className="p-2 rounded-lg bg-primary/10 dark:bg-primary/20 group-hover:bg-primary/20 dark:group-hover:bg-primary/30 transition-colors duration-200">
                   <Shield className="w-4 h-4 text-primary dark:text-primary-light flex-shrink-0" />
